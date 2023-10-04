@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+
+.main-table{
+    width: 100vw;
+    height: 100vh;
+    border-collapse: collapse;
+}
+
+.first-row{
+    height: 15vh;
+    background-color: aqua;
+}
+
+.second-row{
+    height: 60vh;
+}
+
+.third-row{
+    height: 10vh;
+    background-color: blueviolet;
+}
+
+.forth-row{
+    min-height: 15vh;
+    background-color: bisque;
+}
+
+
+
+
+.left-column{
+    width: 20vw;
+    background-color: rgb(17, 218, 44);
+    vertical-align: top;
+}
+.center-column{
+    width: 60vw;
+    background-color: aquamarine;
+    vertical-align: top;
+}
+.right-column{
+    width: 20vw;
+    background-color: chocolate;
+    vertical-align: top;
+}
+
+.Title{
+    width: 10vw;
+}
+

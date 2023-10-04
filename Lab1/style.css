@@ -27,11 +27,6 @@ header{
 }
 
 
-
-
-
-
-
 .full-main{
     display: flex;
     flex-direction: row;
@@ -86,7 +81,7 @@ header{
 }
 
 .main-left{
-    background-color: rgb(193, 75, 197);
+    background-color: aliceblue;
     display: flex;
     width: 25vw;
     padding: 1px;
@@ -99,7 +94,7 @@ header{
 }
 
 .center-up{
-    background-color: aquamarine;
+    background-color: bisque;
     display: flex;
     flex-direction: column;
     flex-grow: 85;
