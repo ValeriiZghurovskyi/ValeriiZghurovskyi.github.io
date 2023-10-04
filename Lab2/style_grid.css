@@ -2,7 +2,7 @@ body{
 margin: 0;
 
 }
-
+ 
 .header{
     box-sizing: border-box;
     grid-area: header;
