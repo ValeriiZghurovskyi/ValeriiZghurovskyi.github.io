@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    display: grid;
+    padding-top: 5vh;
+}
+
+.wrapper{
+    vertical-align: middle;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+
+    max-width: 100vh;
+    max-height: 100vh;
+    display: grid;
+
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+
+    grid-template-areas: 
+    'training-text  photo1          photo2'
+    'training-text  education-key   photo3'
+    'photo4         footer          footer'
+    
+    ;
+}
+
+.training-text{
+    align-items: center;
+    grid-area: training-text;
+    background-color:rgb(24, 197, 204);
+    color: white;
+    padding: 10%;
+}
+
+.Training-title{
+    margin-top: 40%;
+}
+
+
+.education-key{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-area: education-key;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-sizing: border-box;
+    height: 100%;
+    border: solid 1px;
+    border-color: rgb(24, 197, 204);
+    color: rgb(24, 197, 204);
+}
+
+ .footer-title{
+    grid-area: footer-title;
+    margin: auto;
+    margin-left: 0;
+} 
+
+.footer{
+    display: grid;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-areas:
+    'footer-title'
+    'footer-text'
+    'readmore-button'
+    ;
+    grid-area: footer;
+    background-color:rgb(248, 105, 66);
+    color: white;
+    padding: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.readmore-button{
+    grid-area: readmore-button;
+    padding: 0;
+    margin: 0;
+    height: 50%;
+    width: 30%;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.readmore-button:hover{
+    background-color: lightgray;   
+}
+
+.footer-text{
+    grid-area: footer-text;
+    margin-top: 0;
+}
+
+.photo1{
+    grid-area: photo1;
+    width: 100%;
+    max-height: 100%;
+}
+
+.photo2 {
+    width: 100%;
+    max-height: 100%;
+    grid-area: photo2;
+}
+
+.photo3 {
+    width: 100%;
+    max-height: 100%;
+    grid-area: photo3;
+}
+
+.photo4 {
+    width: 100%;
+    max-height: 100%;
+    grid-area: photo4;
+}
+
+.modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    cursor: pointer;
+    overflow-y: auto;
+    display: none;
+}
+
+.modal-main{
+    position: relative;
+    max-width: 80vh;
+    background-color: lightcyan;
+    margin: auto;
+    color: black;
+    border-radius: 15px;
+    padding: 30px;
+    cursor: default;
+}
+
+.modal-close{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+
+
+
+@media (max-width: 720px) {
+
+    .wrapper{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        
+
+        width: 100%;
+        max-width: 80vw;
+
+
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        height: auto;
+        max-height: auto;
+
+        grid-template-areas: 
+        'training-text'
+        'photo1'
+        'photo2'
+        'education-key'
+        'photo3'
+        'photo4'
+        'footer';
+    }
+
+    .Training-title{
+        margin-top: 30%;
+    }
+
+    .education-key{
+        height: 80vw;
+    }
+    .training-text{
+        box-sizing: border-box;
+        height: 80vw;
+    }
+    
+    .footer{
+        height: 80vw;
+    }
+
+    .modal-main {
+        max-width: 70vw;
+    }
+}
